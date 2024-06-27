@@ -5,22 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Text Links Example</title>
 <style>
+  /* Reset default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body styles */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
+    background-color: #f0f0f0;
   }
+
+  /* Container for links */
   .link-container {
-    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
   }
+
+  /* Link styles */
   .link-container a {
     display: block;
-    margin-bottom: 5px;
-    color: blue;
+    margin-bottom: 10px;
+    padding: 12px;
+    color: #333;
     text-decoration: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
   }
+
   .link-container a:hover {
-    text-decoration: underline;
+    background-color: #e0e0e0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .link-container {
+      padding: 15px;
+    }
+    .link-container a {
+      font-size: 14px;
+    }
   }
 </style>
 </head>
